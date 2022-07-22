@@ -11,6 +11,7 @@ author: Remering
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
+
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
@@ -122,6 +123,7 @@ banner_mask_alpha: 0.5
 
 # Navigation Bar
 navbar:
+  blog_title: '小水坑'
   menu:
     - key: 'home'
       link: '/'
@@ -144,6 +146,16 @@ index:
   slogan:
     enable: true
     text: 咸鱼Remering的小水坑
+  auto_excerpt:
+    enable: true
+  post_url_target: _self
+  post_meta:
+    date: true
+    category: true
+    tag: true
+  post_sticky:
+    enable: true
+    icon: 'iconfont icon-top'
 
 post:
   meta: 
@@ -171,6 +183,9 @@ post:
     enable: true
     specific: true
     options:
+  footnote:
+    enable: true
+    header: ''
 
 code:
   copy_btn: true
@@ -184,3 +199,18 @@ code:
     prismjs:
       style: "default"
       preprocess: true
+
+lazyload:
+  enable: true
+  loading_img: /assets/images/loading.gif
+  onlypost: false
+  offset_factor: 2
+
+footer:
+  statistics:
+    enable: false
+    source: "busuanzi"  # 可选 leancloud | busuanzi  根据自己需求选择
+    pv_format: "总访问量 {} 次"  # 显示的文本，{}是数字的占位符（必须包含)，下同
+    uv_format: "总访客数 {} 人"
+    
+all_minifier: true
