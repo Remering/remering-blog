@@ -7,6 +7,7 @@ import swup from "@swup/astro";
 import { defineConfig } from "astro/config";
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
+import edgeoneAdapter from "@edgeone/astro";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeComponents from "rehype-components";
 import rehypeKatex from "rehype-katex";
@@ -34,6 +35,7 @@ export default defineConfig({
 	trailingSlash: "always",
 
 	output: "static",
+	adapter: edgeoneAdapter(),
 
 	integrations: [
 		tailwind({
@@ -188,3 +190,4 @@ export default defineConfig({
 		},
 	},
 });
+
